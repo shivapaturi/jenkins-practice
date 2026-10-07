@@ -8,21 +8,21 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                scrpit{
+                script{
                     echo 'Building..'
                 }
             }
         }
         stage('Test') {
             steps {
-                scrpit{
+                script{
                     echo 'Testing..'
                 }    
             }
         }
         stage('Deploy') {
             steps {
-                scrpit{
+                script{
                     echo 'Deploying....'
                 }
                 
