@@ -28,7 +28,7 @@ pipeline {
                         sleep 10
                         env
                     """
-                } 
+                }
             }
         }
         stage('Test') {
