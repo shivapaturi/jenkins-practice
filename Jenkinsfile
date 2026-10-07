@@ -3,13 +3,18 @@ pipeline {
         node {
             label 'AGENT-1'
     }
+    environment { 
+        COURSE = 'jenkins'
 }
 
     stages {
         stage('Build') {
             steps {
                 script{
-                    echo 'Building..'
+                    sh """
+                        echo 'Building..'
+                        env
+                    """
                 }
             }
         }
